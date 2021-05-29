@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @funcionario.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @funcionario.email %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_funcionario_path(@funcionario), class:"btn btn-dark" %> 
+<%= link_to 'Back', funcionarios_path, class:"btn btn-dark" %>

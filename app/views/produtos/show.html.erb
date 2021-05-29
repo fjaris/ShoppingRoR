@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @produto.name %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @produto.descricao %>
+</p>
+
+
+
+<%= image_tag(@produto.foto)%>
+
+
+
+<p>
+  <strong>Categoria:</strong>
+  <%= @produto.categoria %>
+</p>
+
+<p>
+  <strong>Preco:</strong>
+  <%= @produto.preco %>
+</p>
+
+<%= link_to 'Edit', edit_produto_path(@produto), class:"btn btn-dark" %> 
+<%= link_to 'Back', produtos_path, class:"btn btn-dark" %>
